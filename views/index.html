@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../resoures/index.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="box">
+      
+      <nav>
+          <ul>
+              <li><a href="/index"> index </a></li>
+              <li><a href="/item"> item </a></li>
+              <li><a href="/submit"> submit</a></li>
+          </ul>
+      </nav>
+      <header>
+            <h1>新闻列表</h1>
+        </header>
+      <div style="clear:both"></div>
+      <div class="news">
+          <ol>
+            <% for (var i = 0; i < list.length; i++ ) { %>
+            <li>
+                <a href="/item?id=<%= list[i].id %>">
+                    <h3><%= list[i].title %></h3>
+                </a>
+            </li>
+            <% } %>
+        </ol>
+      </div>
+      <a href="##">More</a>
+   </div> 
+</body>
+</html>

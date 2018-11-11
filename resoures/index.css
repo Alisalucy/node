@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+a{text-decoration: none}
+
+.box{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    background: #ddd;
+    overflow: hidden;
+}
+header{
+    height: 80px;
+}
+ul{list-style: none; width: 100%; background: orange; overflow: hidden;}
+ul li{
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    float: left;
+    margin-left: 0;
+    border: 2px solid #bbb;
+}
+
+.news>ol li a{
+    color: #333;
+}
+.news>ol li a:hover{
+    color:rgb(6, 73, 95);
+}
+
+.news{
+    padding: 30px;
+}
+.news li{
+    margin: 10px 0;
+}
+.news>li a{
+    
+    color: rgb(5, 18, 143);
+}
+.news>li a:hover{
+    color: rgb(6, 73, 95);
+    text-decoration: underline;
+}
+
+.news>li{
+    list-style: none;
+}
+.news>li p{
+    line-height: 2.2em;
+    margin-top: 10px;
+}
+
+
+form{
+    text-align: center
+}
+input,textarea{
+    width: 80%;
+   outline: none;
+    display: inline-block;
+    margin: 15px 40px 15px;
+    resize: none;
+    padding-left: 15px;
+    font-size: 16px;
+}
+input{
+    height: 40px;
+}
